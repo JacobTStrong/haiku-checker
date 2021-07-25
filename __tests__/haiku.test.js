@@ -8,4 +8,13 @@ describe ('Haiku', () => {
     expect(haiku.line2).toEqual(7);
     expect(haiku.line3).toEqual(5);
   });
+  
+  test('should determine whether or not a pass contains 17 vowels', () => {
+    const haiku = new Haiku("", "", "");
+    let vowelNumber = haiku.vowelCounter("A world of dew And", "within every dewdrop", "A world of stuggle");
+    expect(vowelNumber).toEqual(17);
+  });
+
 });
+
+  
